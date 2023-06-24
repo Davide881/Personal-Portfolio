@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/fd90cbc167.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+<div id="progressbar"></div>
+<div id="scrollpath"></div>
+<section>
+<div id="header">
+    <div class="container">
+        <nav class="nav">
+            <ul id="sidemenu">
+                <li><a href="#" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <h3><span class="text1"></span></h3>
+            <!-- <h3><span class="text1x"></span></h3> -->
+            <h1><span class="text2"></span></h1>
+            <!-- <h1><span class="text2x"></span></h1> -->
+            <a class="button btnx" href="#about">More Info
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            
+         </div>
+    </div>
+</div>
+<!----------about----------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h1 class="sub-title">Who is Davide?</h1>
+                <p>[WIP]Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    At expedita inventore aperiam. Excepturi quia minus dolorum, 
+                    eligendi magni blanditiis nulla sequi, dignissimos vel animi, 
+                    cupiditate impedit. Praesentium non ad sequi.</p>
+                    
+                    <a href="#eduid" class="btn abt"><span>About education</span></a>
+                    <div id="eduid"></div>
+
+                    <div class="about-col-1">
+                        <img  src="images/user.png">
+                    </div>
+                    
+                    <div class="tab-titles">
+                    
+                       <p class="tab-links active-link tb3" onclick="opentab('education')"><span>Education</span></p>
+                        <p class="tab-links  tb1" onclick="opentab('skills')"><span>Skills</span></p>
+                        <p class="tab-links tb2" onclick="opentab('experience')"><span>Experience</span></p>
+                        
+                    </div>
+                    
+                        <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2022</span><br>3D Studio Max A.C.U.<br>Maya A.C.U.<br>
+                                <a href="https://courses.edx.org/certificates/e494346c39db4eb18df30e7a7840c232" target="_blank"><i class="fa-solid fa-link"></i> Python: py4e101x </a>
+                                <br><span>2021</span><br>High School Diploma</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Designing Website</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Start2Impact Web Designer Master</li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<!-----------------------portfolio------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <div class="layer">
+                    <section class="animation I">
+                        <div class="first"><div>Hello world!</div></div>
+                        <div class="second"><div>Web Developer</div></div>
+                        <div class="third"><div><a href="#">Check it out!</a></div></div>
+                      </section>
+                </div>
+                <div class="layer">
+                    <section class="animation II">
+                        <div class="first"><div>Hello world!</div></div>
+                        <div class="second"><div>Web Developer</div></div>
+                        <div class="third"><div><a href="#">Check it out!</a></div></div>
+                    </section>
+                </div>
+                <div class="layer">
+                    <section class="animation III">
+                        <div class="first"><div>Hello world!</div></div>
+                        <div class="second"><div>Web Developer</div></div>
+                        <div class="third"><div><a href="#">Check it out!</a></div></div>
+                    </section>
+                </div>
+  
+                
+                
+
+
+
+            </div>      
+        </div>
+
+        </div> 
+    </div>
+</div>
+
+<!--------------------Contact----------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> davidesng881@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 3515909530</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/davide-sanguigni-944293256" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn"><span>Download CV</span></a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Insert your name here" required>
+                    <input type="text" name="Email" placeholder="Insert your email here" required>
+                    <textarea name="Message" rows="5" placeholder="Write your message here"></textarea>
+                    <button type="submit" class="btn2"><span>Submit</Span></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright  <i class="fa-regular fa-copyright"></i> Davide Sanguigni </p>
+    </div>
+
+</div>
+</section>
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</script>
+
+<script type="text/javascript">
+    let progress= document.getElementById('progressbar');
+    let totalHeight= document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    
+
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+<script>
+
+
+     var typingEffect = new Typed(".text1",{
+        strings : ["Hello!","Welcome to my personal portfolio",],
+        loop : false,
+        typeSpeed : 100,
+        backSpeed : 80,
+        backDelay : 1500 
+    })
+    
+</script>
+
+<script>
+    
+    var typingEffect = new Typed(".text2",{
+        strings : ["I'm Davide Sanguigni","Frontend Developer",],
+        loop : true,
+        typeSpeed : 130,
+        backSpeed : 110,
+        backDelay : 1500 
+    })
+</script>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName ("tab-links")
+    var tabcontents = document.getElementsByClassName ("tab-contents")
+    function opentab (tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        event.currentTarget.classList.add ("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    }
+</script>
+    
+</body>
